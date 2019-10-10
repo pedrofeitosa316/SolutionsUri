@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.php": "php",
+        "*.blade.php": "blade",
+        "1110.C": "cpp"
+    }
+}
