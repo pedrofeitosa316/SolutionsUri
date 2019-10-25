@@ -2,11 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct lista {
+typedef struct lista {
 	int info;
 	struct lista* prox;
-};
-typedef struct lista Lista;
+} Lista;
 
 typedef struct fila {
 	Lista* ini;
@@ -57,7 +56,6 @@ int main(void) {
 			for (i = 1; i <= numero; i++) {
 				fila_insere(fila, i);
 			}
-
 			for (i = 1; i != 0; i++) {
 				if (fila->ini != NULL) {
 					if (i % 2 != 0) {
